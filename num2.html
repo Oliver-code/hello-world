@@ -1,35 +1,57 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <style media="screen">
+<head>
+<style>
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
 
-    body {
-      background-image: url("http://www.robertbowenart.com/wp-content/themes/RobertBowenArt/images/Octopussy-2.jpg");
-      background-size: cover;;
-      background-repeat: no-repeat;
-      width: 100vw;
-      height: 100vh;
-      font-size: 15px;
-      text-align: center;
-    }
+.flex-container > .header-item {
+  padding: 10px;
+  flex: 1 100%;
+}
 
-    h1{
-      color: red;
-    }
+.flex-item {
+    background-color: cornflowerblue;
+    border: white;
+    flex-basis: 33%;
+}
 
-    .epic_quote1 {
-      color :white;
-      font-size:2rem;
-    }
-    </style>
-  </head>
-  <body>
-    <h1>STUFF</h1>
-    <p class="epic_quote1">ONE DAY CATS WILL
-      <a href="https://en.wikipedia.org/wiki/Evolution">EVOLVE</a>
-      <a href="/num2.html">STAGES OF EVOLUTION</a>
-    </p>
-  </body>
+.im_big{
+  text-align: center;
+}
+
+img {
+  max-width: 30vw;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="flex-container">
+    <div class="header-item">
+        <h2 class="im_big" >THE EVOLUTION OF CATS TO OCTOCATS. <a href="http://oliver-code.github.io/hello-world/">To other page</a></h2>
+    </div>
+    <div class="flex-item ">
+      <img src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg" alt="Cat"/>
+      <h3>STAGE 1</h3>
+    </div>
+    <div class="flex-item ">
+      <img src="http://cache.lovethispic.com/uploaded_images/198290-Sometimes-I-Wish-I-Was-An-Octupus....jpg" alt="Cat who wishes it wes an octopus." />
+      <h3>STAGE 2</h3>
+    </div>
+    <div class="flex-item ">
+      <img src="http://s8.favim.com/610/72/Favim.com-art-cat-drawing-illustration-686546.jpg" alt="Octocat."/> <h3>STAGE 3</h3>
+    </div>
+  </div>
+
+</body>
 </html>
